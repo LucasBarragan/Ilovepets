@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+}
+/* navBar */
+
+.header{
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+.imgLogo{
+    width:  15,3rem;
+    height: 8.6rem;
+}
+
+.navBar{
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+.imgNavIcon{
+    width: 4rem;
+    height: 4rem;
+}
+
+
+/* --------------------------------------------------- */
+
+
+.sectionPrincipal{
+    width: 100%;
+    height: 31.25rem;
+    background-color: yellowgreen;
+    margin-bottom: 100px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------- */
+
+.productosContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    margin-left: 30px;
+    font-size: 2.5rem;
+}
+
+.card{
+    width: 200px;
+    height: 460px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 1px 3px rgb(163, 163, 163);
+    margin: 60px;
+}
+
+.cardImg{
+    width: 100%;
+    height: 50%;
+}
+
+.cardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: .625rem;
+}
+
+.cardContenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContenido h3{
+    padding-left: 10px;
+    margin-top: 30px;
+}
+.cardContenido p{
+    margin: 17px 17px;
+    text-align: left;
+}
+
+.boton{
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(103, 161, 232);
+    padding: 5px;
+}
+
+
+p.marca{
+    margin: 0;
+    margin-left: 5px;
+    color: gray;
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3.125rem;
+}
