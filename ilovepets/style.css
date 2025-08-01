@@ -58,10 +58,22 @@ ul li a {
 
 /* ---------------------------------------------------------------------------------- */
 
-.productosContainer{
+.divPrueba{
     width: 100%;
+    height: 100%;
+    border: 10px solid rebeccapurple;
+    display: flex;
+}
+
+.productosContainer{
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 10px solid blue;
+    margin: auto;
+    border: 1px solid red;
 }
 h2{
     margin-left: 30px;
@@ -103,6 +115,7 @@ h2{
     text-align: left;
 }
 
+
 .boton{
     margin-left: 25%;
     width: 50%;
@@ -119,10 +132,13 @@ p.marca{
     color: gray;
 }
 .cardContainer{
+    width: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     margin-top: 3.125rem;
+    background-color: black;
 }
+
