@@ -8,16 +8,19 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img src="./assets/img/logo.jpg" class="imgLogo" alt=""></a>
+        <a href="index.html"><img src="./assets/img/ILOVEPETSc.png" class="imgLogo" alt=""></a>
         <nav>
+            <div class="buscador">
+                <input type="text" class="buscadorInput" placeholder="Buscar...">
+            </div>
             <ul class="navBar">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/perros.html">Para perros</a></li>
-                <li><a href="./pages/gatos.html">Para gatos</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li class="liNavBar"><a href="#">Inicio</a></li>
+                <li class="liNavBar"><a href="./pages/perros.html">Para perros</a></li>
+                <li class="liNavBar"><a href="./pages/gatos.html">Para gatos</a></li>
+                <li class="liNavBar"><a href="./pages/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="divImgNavIcon">
             <img class="imgNavIcon" src="./assets/img/shopping-cart.png" alt="">
             <img class="imgNavIcon" src="./assets/img/user.png" alt="">
         </div>
@@ -28,10 +31,7 @@
         </section>
             <h2>Productos</h2>
         <div class="divPrueba">
-
-
             <section class="productosContainer">
-
                 <div class="cardContainer">
                     <article class="card">
                         <div class="cardImg">
@@ -99,6 +99,20 @@
                 </div>
             </section>
         </div>
+        <section class="sectionCupon">
+            <div class="divCupon">
+                <p class="pCupon">¡Completá tus datos y recibí tu cupón de 15% OFF en tu primera compra! </p>
+            </div>
+            <div class="divNombreMascota">
+                <input type="text" class="NombreMascotaInput" placeholder="Nombre de tu mascota">
+            </div>
+                <div class="divEmail">
+                <input type="text" class="NombreMascotaInput" placeholder="Tu Email">
+            </div>
+            <div class="divButton">
+                <button id="bottone5">CONSEGUIR CUPON!</button>
+            </div>
+        </section>
     </main>
 </body>
 <footer>

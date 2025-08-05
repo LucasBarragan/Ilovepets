@@ -1,68 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
 }
 
 body{
     background-color: rgb(243, 243, 243);
 }
 
-/* navBar */
 
 .header{
-    background-color: #2c46a6;
+    background-color: #4A90E2 ;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
     position: sticky;
     top: 0px;
     width: 100%;
+    height: 180px;
 }
 
 .imgLogo{
-    width:  15,3rem;
-    height: 8.6rem;
+    width:  150px;
+    height: 150px;
 }
 
 .navBar{
+    width: 100%;
     list-style: none;
     display: flex;
     gap: 1.875rem;
 }
 
+.buscador{
+    width: 100%;
+}
+.buscadorInput{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 100%;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+    margin-bottom: 30px;
+}
+
 ul li a {
     color: black;
     text-decoration: none;
-    font-size: 1.5rem;
 }
 
+.liNavBar {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 0.5em 1.5em;
+    color: #d3f7ff;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.liNavBar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #000000;
+    transition: 0.5s ease;
+}
+
+.liNavBar:hover {
+    color: #1e1e2b;
+    transition-delay: 0.5s;
+}
+
+.liNavBar:hover::before {
+    width: 100%;
+}
+
+.liNavBar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #6ba6ea;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+
+.liNavBar:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+}
+
+.divImgNavIcon{
+    width: 10%;
+    display: flex;
+    border: 2px solid red;
+    gap: 1.25rem;
+}
 
 .imgNavIcon{
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
+    
 }
 
 
-/* --------------------------------------------------- */
+/* CARRITO DE FOTOS */
 
 
 .sectionPrincipal{
     width: 100%;
     height: 31.25rem;
-    background-color: yellowgreen;
+    border: 1px solid black;
     margin-bottom: 100px;
 }
 
-
-
-/* ---------------------------------------------------------------------------------- */
+/* PRODUCTOS INDEX */
 
 .divPrueba {
     width: 90%;
     margin: 0 auto;
-    border: 4px solid rgb(255, 0, 217);
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -79,7 +154,7 @@ ul li a {
 }
 h2{
     margin-left: 30px;
-    font-size: 2.5rem;
+    font-size: 32px;
 }
 
 .card{
@@ -142,25 +217,118 @@ p.marca{
     object-fit: contain;
 }
 
+/* SECTION CUPON */
+
+.sectionCupon{
+    margin-top: 40px;
+    width: 100%;
+    background-color: rgb(64, 75, 177);
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divCupon{
+    margin: auto;
+    width: 20%;
+    height: 70px;
+    font-size: 20px;
+}
+.pCupon{
+    color: #f4f2f2;
+}
+.divNombreMascota{
+    width: 15%;
+    height: 50px;
+    margin: auto;
+}
+
+.divEmail{
+    width: 15%;
+    height: 50px;
+    margin: auto;
+}
+
+.NombreMascotaInput{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 100%;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+    margin-bottom: 30px;
+}
+
+#bottone5 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+#bottone5:hover, #bottone5:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#bottone5:hover {
+    transform: translateY(-1px);
+}
+
+#bottone5:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+/* FOOTER */
+
 footer{
     width: 100%;
     height: 300px;
-    background-color: aquamarine;
+    background-color: rgb(209, 209, 209);
     margin-top: 50px;
     display: flex;
-    gap: 100px;
+    gap: 20px;
 }
 
 .divInformacion{
-    width: 45%;
+    width: 64%;
     height: auto;
-    border: 2px solid red;
     gap: 2.1875rem;
 }
 
 .pInformacion{
     font-weight: bold;
-    font-size: 42px;
+    font-size: 38px;
     margin-top: 20px;
     margin-left: 10px;
 }
@@ -171,7 +339,7 @@ footer{
 }
 
 .pData{
-    font-size: 20px;
+    font-size: 18px;
     margin: 15px 0 15px 20px;
 }
 
@@ -191,17 +359,16 @@ footer{
 .divEnviosGratisFooter{
     width: 15%;
     height: 200px;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
 .pEnviosFooter, .pRetiroFooter{
     width: 100%;
     font-size: 20px;
     font-weight: bold;
-    border: 2px solid blue;
 }
 
 .pPagosFooter{
@@ -220,8 +387,8 @@ footer{
 .divRetirarFooter{
     width: 15%;
     height: 200px;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
+    margin: auto;
     align-items: center;
 }
