@@ -11,7 +11,10 @@
 body{
     background-color: rgb(243, 243, 243);
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .header{
     background-color: #4A90E2 ;
@@ -57,6 +60,15 @@ body{
 ul li a {
     color: black;
     text-decoration: none;
+}
+
+.aNavbar{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    text-decoration: none;    
+    color: black;
 }
 
 .liNavBar {
@@ -112,7 +124,6 @@ ul li a {
 .divImgNavIcon{
     width: 10%;
     display: flex;
-    border: 2px solid red;
     gap: 1.25rem;
 }
 
@@ -122,89 +133,86 @@ ul li a {
     
 }
 
-
-/* CARRITO DE FOTOS */
-
-
-.sectionPrincipal{
-    width: 100%;
-    height: 31.25rem;
-    border: 1px solid black;
-    margin-bottom: 100px;
-}
-
 /* PRODUCTOS INDEX */
 
-.aProducto{
-    text-decoration: none;
-    color: black;
+.h2Index{
+    text-align: center;
+    margin: 10px 0 10px 0;
 }
 
-.divPrueba {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-
-.productosContainer {
+.divContenedorPrincipal{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; 
-    border: none; 
-}
-h2{
-    margin-left: 30px;
-    font-size: 32px;
+    margin-bottom: 50px;
 }
 
-.card{
-    width: 200px;
+.sectionPrincipal{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.divContnedor{
+    width: 240px;
     height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 3px 1px 3px rgb(203, 203, 203);
-    margin: 10px;
+    margin: 5px;
 }
 
-.card:hover{
+.divContnedor:hover{
     box-shadow: 5px 2px 3px rgb(163, 163, 163);
     z-index: auto;
 }
 
-.cardImg{
-    width: 100%;
-    height: 50%;
-}
-
-.cardImg img{
-    width: 100%;
-    height: 100%;
+.imgProducto{
+    width: 200px;
     object-fit: contain;
-    margin-top: .625rem;
 }
 
-.cardContenido{
+.divProductoInfo{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: .9375rem;
 }
 
-.cardContenido h3{
-    padding-left: 10px;
-    margin-top: 30px;
+.marca{
+    font-size: 18px;
+    margin: 0;
+    margin-left: 7px;
+    color: gray;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;   
 }
-.cardContenido p{
-    margin: 17px 17px;
-    text-align: left;
+
+.pDesc, .pPrecioXKg{
+    margin: 0 4px 0 10px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 3;    
 }
 
 
 .boton{
-    margin-left: 25%;
     width: 50%;
     border-radius: 10px;
     border: none;
@@ -212,54 +220,39 @@ h2{
     padding: 5px;
 }
 
+.boton:hover{
+    background: rgb(29, 129, 252);
+    cursor: pointer;
+}
 
-p.marca{
-    margin: 0;
-    margin-left: 5px;
-    color: gray;
-}
-.cardContainer{
-    width: auto;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 3.125rem;
-    object-fit: contain;
-}
+
 
 /* SECTION CUPON */
 
 .sectionCupon{
-    margin-top: 40px;
-    width: 100%;
-    background-color: rgb(64, 75, 177);
-    height: 150px;
+    margin-top: 20px;
     display: flex;
+    padding: 10px;
     justify-content: space-evenly;
+    align-items: center;
+        background-color: rgb(64, 75, 177);
 }
 
+/* primer p a la izquierda */
 .divCupon{
-    margin: auto;
-    width: 20%;
-    height: 70px;
-    font-size: 20px;
+    width: 17%;
+    font-weight: bold;
 }
+
 .pCupon{
+    font-size: 24px;
     color: #f4f2f2;
 }
-.divNombreMascota{
-    width: 15%;
-    height: 50px;
-    margin: auto;
-}
 
-.divEmail{
-    width: 15%;
-    height: 50px;
-    margin: auto;
-}
+/* input nombre */
 
-.NombreMascotaInput{
+
+.NombreMascotaEmailInput{
     font-family: inherit;
     font-size: inherit;
     background-color: #f4f2f2;
@@ -269,9 +262,9 @@ p.marca{
     border-radius: 30px;
     width: 100%;
     transition: all ease-in-out .5s;
-    margin-right: -2rem;
-    margin-bottom: 30px;
 }
+
+
 
 #bottone5 {
     align-items: center;
@@ -296,9 +289,6 @@ p.marca{
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: baseline;
-    width: auto;
-    margin-top: 50px;
-    margin-right: 20px;
 }
 
 #bottone5:hover, #bottone5:focus {
@@ -330,8 +320,8 @@ footer{
 }
 
 footer a{
-        text-decoration: none;
-        color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .divContenedorFooter{
@@ -412,4 +402,88 @@ footer a{
     width: auto;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+/* producto del index */
+
+
+/* solo img */
+
+.divContenedorProducto{
+    width: auto;
+    height: 1000px;
+    border: 3px solid red;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.divCardProducto{
+    width: 100%;
+    height: 950px;
+    border: 3px solid blue;
+    display: flex;
+    gap: 3.125rem;
+}
+
+.imgCardProducto{
+    border: 2px solid green;
+    width: auto;
+    margin: 150px 100px 150px 250px;
+    object-fit: contain;
+}
+
+.imgProductoElegido{
+    width: 450px
+}
+/* ------------------------------------------------------------------------ */
+
+/* d2 */
+
+.divPProducto{
+    border: 2px solid rgb(255, 0, 238);
+    width: 30%;
+}
+
+.marcaProducto{
+    margin: 150px 0 15px 10px;
+    font-size: 1rem;
+    color: rgb(101, 101, 101);
+}
+
+.pTextoProducto, .pPrecioProducto, .pPrecioXKgProducto{
+    margin-bottom: 10px;
+}
+
+.pTextoProducto ,.pPrecioProducto{
+    font-size: 1.5rem;
+}
+
+.pPrecioProducto{
+    margin-top: 50px;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+/* ----------------------------------- */
+
+.d3{
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgb(255, 166, 0);
+    background-color: white;
+    border-radius: 15px;
+}
+
+.buttonD3
+
+
+
+
+
+.d4{
+        width: 100%;
+    height: 200px;
+    border: 2px solid rgb(255, 251, 0);
 }
