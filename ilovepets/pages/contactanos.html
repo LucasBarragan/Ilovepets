@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/pageNosotros.css">
+    <link rel="stylesheet" href="../css/pageContactanos.css">
     <link rel="stylesheet" href="../css/cupon.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
@@ -30,31 +30,33 @@
         </div>
     </header>
     <main>
-        <div class="divContainerNosotros">
-            <div class="divTextoNosotros">
-                <h2>Quienes somos?</h2>
-                <p>ILOVEPETS es una tienda especializada en productos y servicios para mascotas, pensada para brindarte una experiencia de compra única. Ofrecemos artículos y servicios de alta calidad que responden a las necesidades de las mascotas y a la satisfacción de quienes las aman.</p>
-                <p>En ILOVEPETS creemos que las mascotas son parte fundamental de la familia. Por eso, nuestra misión es cuidarlas, protegerlas y ofrecerles lo mejor para que disfruten de una vida plena y saludable. Contamos con una amplia variedad de alimentos, accesorios, productos de farmacia, y servicios especializados como veterinaria, peluquería, adopciones y mucho más.</p>
-                <p><b>ILOVEPETS</b>, porque ellos merecen lo mejor.</p>
+        <section class="contacto">
+        <div class="contacto-info">
+            <h2>Contáctanos</h2>
+            <p>En ILOVEPETS nos encanta escucharte. Si tenés consultas, sugerencias o querés más información sobre nuestros productos y servicios, completá el formulario o escribinos directamente.</p>
+            <div class="info-item">
+                <h3>📍 Dirección</h3>
+                <p>Calle Falsa 123, Buenos Aires, Argentina</p>
             </div>
-            <div class="divImgNosotros">
-                <img src="../assets/img/nosotrosImg.png" alt="">
+            <div class="info-item">
+                <h3>📞 Teléfono</h3>
+                <p>+54 11 1234 5678</p>
+            </div>
+            <div class="info-item">
+                <h3>✉️ Email</h3>
+                <p>contacto@ilovepets.com</p>
             </div>
         </div>
-        <section class="sectionCupon">
-            <div class="divCupon">
-                <p class="pCupon">¡Completá tus datos y recibí tu cupón de 15% OFF en tu primera compra! </p>
-            </div>
-            <div class="divNombreMascota">
-                <input type="text" class="NombreMascotaEmailInput" placeholder="Nombre de tu mascota">
-            </div>
-                <div class="divEmail">
-                <input type="text" class="NombreMascotaEmailInput" placeholder="Tu Email">
-            </div>
-            <div class="divButton">
-                <button id="bottone5">CONSEGUIR CUPON!</button>
-            </div>
-        </section>
+        <form class="contacto-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
     </main>
 </body>
 <footer>
@@ -63,7 +65,7 @@
             <p class="pInformacion">Información</p>
             <div class="footerAnclas">
                 <div>
-                    <a href="#" class="anclasDelFooter">Quienes somos?</a>
+                    <a href="./nosotros.html" class="anclasDelFooter">Quienes somos?</a>
                 </div>
                 <div>
                     <a href="./contactanos.html" class="anclasDelFooter">Contactanos</a>

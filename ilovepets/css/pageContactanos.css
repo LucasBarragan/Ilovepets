@@ -1,0 +1,83 @@
+/* page contactanos */
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 3rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #f3f7f8;
+}
+
+.contacto-info h2 {
+    font-size: 2rem;
+    color: #6ba6ea;
+    margin-bottom: 1rem;
+}
+
+.contacto-info p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.info-item h3 {
+    margin: 0.5rem 0;
+    color: #6ba6ea;
+}
+
+.info-item p {
+    margin: 0;
+    color: #333;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contacto-form label {
+    font-weight: bold;
+    color: #6ba6ea;
+}
+
+.contacto-form input, .contacto-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #d8e5e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.contacto-form input:focus, .contacto-form textarea:focus {
+    outline: none;
+    border-color: #6ba6ea;
+    box-shadow: 0 0 0 2px rgba(26,163,184,0.2);
+}
+
+.contacto-form button {
+    background-color: #6ba6ea;
+    color: white;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contacto-form button:hover {
+    background-color: #3e8ce5;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .contacto {
+        grid-template-columns: 1fr;
+    }
+}

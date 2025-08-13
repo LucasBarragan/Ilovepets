@@ -1,0 +1,94 @@
+footer{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: .625rem;
+    background-color: rgb(209, 209, 209);
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.divContenedorFooter{
+    width: clamp(25rem, 100%, 100%);
+    display: flex;
+    gap: 20px;
+    margin-top: 17px;
+}
+.divInformacion{
+    width: 50%;
+    height: auto;
+    margin-left: 15px;
+}
+
+.pInformacion{
+    margin: 10px 0 5px 10px;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+.footerAnclas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.anclasDelFooter, .pDataCopy, .pDataDefensa{
+    font-size: 18px;
+    width: auto;
+}
+
+/* FOOTER CON IMG */
+
+/* truck */
+.divEnviosGratisFooter{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgFooter{
+    width: 64px;
+    object-fit: contain;
+}
+
+.pEnviosFooter{
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* box */
+
+.divRetirarFooter{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pRetiroFooter{
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* payments */
+
+.divPayments{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pPagosFooter{
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
