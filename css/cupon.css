@@ -1,6 +1,7 @@
 /* SECTION CUPON */
 .sectionCupon {
     margin-top: 20px;
+    height: 250px;
     display: flex;
     padding: 10px;
     justify-content: space-evenly;
