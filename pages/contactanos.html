@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/pageContactanos.css">
+    <link rel="stylesheet" href="../css/cupon.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../assets/img/ILOVEPETSc.png" class="imgLogo" alt=""></a>
+        <nav>
+            <div class="buscador">
+                <input type="text" class="buscadorInput" placeholder="Buscar...">
+            </div>
+            <ul class="navBar">
+                <li class="liNavBar"><a href="../index.html">Inicio</a></li>
+                <li class="liNavBar"><a href="../pages/perros.html">Para perros</a></li>
+                <li class="liNavBar"><a href="../pages/gatos.html">Para gatos</a></li>
+                <li class="liNavBar"><a href="../pages/nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="divNavbarImg">
+            <div class="divImgContainer">
+                <img class="imgNavIcon" src="../assets/img/shopping-cart.png" alt="">
+                <p>Carrito</p>
+            </div>
+            <div class="divImgContainer">
+                <img class="imgNavIcon" src="../assets/img/user.png" alt="">
+                <p>Usuario</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contacto">
+        <div class="contacto-info">
+            <h2>Contáctanos</h2>
+            <p>En ILOVEPETS nos encanta escucharte. Si tenés consultas, sugerencias o querés más información sobre nuestros productos y servicios, completá el formulario o escribinos directamente.</p>
+            <div class="info-item">
+                <h3>📍 Dirección</h3>
+                <p>Calle Falsa 123, Buenos Aires, Argentina</p>
+            </div>
+            <div class="info-item">
+                <h3>📞 Teléfono</h3>
+                <p>+54 11 1234 5678</p>
+            </div>
+            <div class="info-item">
+                <h3>✉️ Email</h3>
+                <p>contacto@ilovepets.com</p>
+            </div>
+        </div>
+        <form class="contacto-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+    </main>
+</body>
+<footer>
+    <div class="divContenedorFooter">
+        <div class="divInformacion">
+            <p class="pInformacion">Información</p>
+            <div class="footerAnclas">
+                <div>
+                    <a href="./nosotros.html" class="anclasDelFooter">Quienes somos?</a>
+                </div>
+                <div>
+                    <a href="./contactanos.html" class="anclasDelFooter">Contactanos</a>
+                </div>
+                <div>
+                    <a href="./legales.html" class="anclasDelFooter">Legales</a>
+                </div>
+                <div>
+                    <a href="./preguntasFrecuentes.html" class="anclasDelFooter">Preguntas frecuentes</a>
+                </div>
+                <p class="pDataCopy">Copyright ILOVEPETS - 2025. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <div class="divEnviosGratisFooter">
+            <img src="../assets/img/delivery-truck.png" class="imgFooter" alt="">
+            <p class="pEnviosFooter">Envios gratis a todo el pais superando los $20,000</p>
+        </div>
+        <div class="divRetirarFooter">
+            <img src="../assets/img/box.png" class="imgFooter" alt="">
+            <p class="pRetiroFooter">Retira tu compra en nuestro local!</p>
+        </div>
+        <div class="divPayments">
+            <img src="../assets/img/credit-card.png" class="imgFooter" alt="">
+            <p class="pPagosFooter">Aceptamos todos los metodos de pago: <br><br>Efectivo/transferencias <br>Tarjetas de credito y debito</p>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,215 @@
+footer {
+    width: 100%;
+    min-height: 230px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgb(209, 209, 209);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.divContenedorFooter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.divInformacion,
+.divEnviosGratisFooter,
+.divRetirarFooter,
+.divPayments {
+    flex: 1 1 250px;
+    max-width: 400px;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.divInformacion {
+    width: 50%;
+    height: auto;
+    margin-left: 15px;
+}
+
+.pInformacion {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footerAnclas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.anclasDelFooter, .pDataCopy, .pDataDefensa {
+    font-size: 16px;
+}
+
+/* FOOTER CON IMG */
+
+/* truck */
+.divEnviosGratisFooter {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgFooter {
+    width: 50px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.pEnviosFooter {
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* box */
+.divRetirarFooter {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pRetiroFooter {
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* payments */
+.divPayments {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pPagosFooter {
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pEnviosFooter, .pRetiroFooter, .pPagosFooter {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* QUERIES */
+
+
+/* 1100px */
+@media (max-width: 1100px) {
+    .divContenedorFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .divInformacion,
+    .divEnviosGratisFooter,
+    .divRetirarFooter,
+    .divPayments {
+        flex: 1 1 45%;
+        max-width: 45%;
+        text-align: center;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .divContenedorFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divInformacion,
+    .divEnviosGratisFooter,
+    .divRetirarFooter,
+    .divPayments {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* 425px */
+@media (max-width: 425px) {
+    .pInformacion {
+        font-size: 20px;
+    }
+
+    .anclasDelFooter, .pDataCopy, .pDataDefensa {
+        font-size: 15px;
+    }
+
+    .imgFooter {
+        width: 50px;
+    }
+
+    .pEnviosFooter, .pRetiroFooter, .pPagosFooter {
+        font-size: 16px;
+    }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+    .pInformacion {
+        font-size: 18px;
+    }
+
+    .anclasDelFooter, .pDataCopy, .pDataDefensa {
+        font-size: 14px;
+    }
+
+    .imgFooter {
+        width: 45px;
+    }
+
+    .pEnviosFooter, .pRetiroFooter, .pPagosFooter {
+        font-size: 14px;
+    }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+    .pInformacion {
+        font-size: 16px;
+    }
+
+    .anclasDelFooter, .pDataCopy, .pDataDefensa {
+        font-size: 12px;
+    }
+
+    .imgFooter {
+        width: 40px;
+    }
+
+    .pEnviosFooter, .pRetiroFooter, .pPagosFooter {
+        font-size: 12px;
+    }
+}

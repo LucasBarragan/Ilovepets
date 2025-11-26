@@ -1,0 +1,161 @@
+/* SECTION CUPON */
+.sectionCupon {
+    margin-top: 20px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(64, 75, 177);
+    gap: 15px; /* 🔹 pequeño espacio entre elementos */
+}
+
+/* primer p a la izquierda */
+.divCupon {
+    width: 17%;
+    font-weight: bold;
+}
+
+.pCupon {
+    font-size: 24px;
+    color: #f4f2f2;
+}
+
+/* input nombre */
+.NombreMascotaEmailInput {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 100%;
+    transition: all ease-in-out .5s;
+}
+
+/* BOTÓN */
+#bottone5 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+#bottone5:hover, #bottone5:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#bottone5:hover {
+    transform: translateY(-1px);
+}
+
+#bottone5:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+
+/* QUERIES */
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .divCupon {
+        width: 25%;
+    }
+    .pCupon {
+        font-size: 20px;
+    }
+    #bottone5 {
+        font-size: 15px;
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .sectionCupon {
+        flex-direction: column;
+        text-align: center;
+    }
+    .divCupon {
+        width: 100%;
+    }
+    .pCupon {
+        font-size: 18px;
+    }
+    .NombreMascotaEmailInput {
+        width: 90%;
+        font-size: 14px;
+    }
+    #bottone5 {
+        width: 60%;
+    }
+}
+
+/* 425px */
+@media (max-width: 425px) {
+    .pCupon {
+        font-size: 17px;
+    }
+    .NombreMascotaEmailInput {
+        width: 100%;
+        font-size: 13px;
+    }
+    #bottone5 {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+    .pCupon {
+        font-size: 16px;
+    }
+    .NombreMascotaEmailInput {
+        font-size: 12px;
+        padding: 0.6rem 0.8rem;
+    }
+    #bottone5 {
+        font-size: 13px;
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+    .pCupon {
+        font-size: 15px;
+    }
+    .NombreMascotaEmailInput {
+        font-size: 11px;
+        padding: 0.5rem 0.7rem;
+    }
+    #bottone5 {
+        font-size: 12px;
+        width: 90%;
+        padding: 0.5rem 0.9rem;
+    }
+}

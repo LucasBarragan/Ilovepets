@@ -1,0 +1,135 @@
+/* page nosotros */
+
+.divContainerNosotros {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.divTextoNosotros{
+    width: 40%;
+}
+
+.divTextoNosotros{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    flex: 1 1 40%;
+    max-width: 500px;
+}
+
+.divTextoNosotros h2{
+    margin-top: 130px;
+    font-size: 32px;
+    color: #6ba6ea;
+}
+
+.divTextoNosotros p{
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.divImgNosotros{
+    width: 40%;
+    object-fit: contain;
+    flex: 1 1 40%;
+    max-width: 500px;
+}
+
+.divImgNosotros img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 1100px */
+
+@media (max-width: 1100px) {
+    .divContainerNosotros {
+        display: flex;
+        gap: 70px;
+    }
+}
+/* 1024px */
+@media (max-width: 1024px) {
+    .divTextoNosotros h2 {
+        margin-top: 80px;
+        font-size: 28px;
+    }
+
+    .divTextoNosotros p {
+        font-size: 18px;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .divContainerNosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divTextoNosotros,
+    .divImgNosotros {
+        width: 80%;
+        max-width: none;
+    }
+
+    .divTextoNosotros h2 {
+        margin-top: 40px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .divTextoNosotros p {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .divImgNosotros {
+        margin-top: 20px;
+    }
+}
+
+/* 425px */
+@media (max-width: 425px) {
+    .divTextoNosotros,
+    .divImgNosotros {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .divTextoNosotros h2 {
+        font-size: 24px;
+    }
+
+    .divTextoNosotros p {
+        font-size: 16px;
+    }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+    .divTextoNosotros h2 {
+        font-size: 22px;
+    }
+
+    .divTextoNosotros p {
+        font-size: 15px;
+    }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+    .divTextoNosotros h2 {
+        font-size: 20px;
+    }
+
+    .divTextoNosotros p {
+        font-size: 14px;
+    }
+}
