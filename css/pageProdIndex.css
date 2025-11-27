@@ -11,11 +11,9 @@ main{
     width: auto;
     height: auto;
     margin-top: 20px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6.25rem;
 }
 
 .divCardProducto{
@@ -204,7 +202,7 @@ main{
 
 .divDescripcionCard{
     width: 50%;
-    height: 900px;
+    height: auto;
     border: 1px solid rgb(175, 175, 175);
     border-radius: 15px;
     margin: auto;
@@ -332,6 +330,10 @@ main{
     font-weight: bold;
 }
 
+.divMasterProductos{
+    width: 100%;
+    height: auto;
+}
 
 /* QUERIES */
 

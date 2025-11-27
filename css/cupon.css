@@ -1,5 +1,6 @@
 /* SECTION CUPON */
 .sectionCupon {
+    width: 100%;
     margin-top: 20px;
     height: 250px;
     display: flex;
